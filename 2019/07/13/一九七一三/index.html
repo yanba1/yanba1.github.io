@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2019/7 | 可雲</title>
+  <title>一九七一三 | 可雲</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -167,96 +167,96 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/111.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2>别恐慌。</h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>The game's only beginning.</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2019/07/13/一九七一三/">一九七一三</a></h4>
-                            
-                            <p><time datetime="2019-07-13T00:45:27.000Z"><a href="/2019/07/13/一九七一三/">2019-07-13</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2019/07/11/P1120/">Luogu P1120</a></h4>
-                            
-                            <p><time datetime="2019-07-11T08:30:07.000Z"><a href="/2019/07/11/P1120/">2019-07-11</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2019/07/06/lose/">Lose</a></h4>
-                            
-                            <p><time datetime="2019-07-06T07:22:31.000Z"><a href="/2019/07/06/lose/">2019-07-06</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2019/07/06/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2019-07-05T22:57:49.953Z"><a href="/2019/07/06/hello-world/">2019-07-06</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2019-07-13T00:45:27.000Z" itemprop="datePublished">
+          2019-07-13
+      </time>
+    
+</span>
+                <h1>一九七一三</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="Luogu-P1514-引水入城"><a href="#Luogu-P1514-引水入城" class="headerlink" title="Luogu P1514 引水入城"></a>Luogu P1514 引水入城</h2><h3 id="用记忆化搜索预处理每个点所能达到的最左和最右的位置"><a href="#用记忆化搜索预处理每个点所能达到的最左和最右的位置" class="headerlink" title="用记忆化搜索预处理每个点所能达到的最左和最右的位置"></a>用记忆化搜索预处理每个点所能达到的最左和最右的位置</h3><h3 id="看每个干旱点的访问情况"><a href="#看每个干旱点的访问情况" class="headerlink" title="看每个干旱点的访问情况"></a>看每个干旱点的访问情况</h3><h3 id="若全都访问过-利用预处理的沿湖点最左最右来覆盖干旱点-以求个数"><a href="#若全都访问过-利用预处理的沿湖点最左最右来覆盖干旱点-以求个数" class="headerlink" title="若全都访问过 利用预处理的沿湖点最左最右来覆盖干旱点 以求个数"></a>若全都访问过 利用预处理的沿湖点最左最右来覆盖干旱点 以求个数</h3><p>···cpp   </p>
+<p>#include<cstdio></cstdio></p>
+<p>#include<cstring></cstring></p>
+<p>#include<algorithm></algorithm></p>
+<p>#define _for(i,a,b) for(register int i=(a);i&lt;=(b);i++)</p>
+<p>const int INF=5e2+1,w[4]={1,-1,0,0},e[4]={0,0,-1,1};<br>int n,m,k=1,cnt,ans,maxn,a[INF][INF],l[INF][INF],r[INF][INF];<br>bool flag=true,vis[INF][INF];</p>
+<p>inline void dfs(int x,int y)<br>{<br>    vis[x][y]=true;<br>    _for(i,0,3)<br>    {<br>        if(x+w[i]&gt;=1&amp;&amp;x+w[i]&lt;=n&amp;&amp;y+e[i]&gt;=1&amp;&amp;y+e[i]&lt;=m&amp;&amp;a[x][y]&gt;a[x+w[i]][y+e[i]])<br>        {<br>            if(!vis[x+w[i]][y+e[i]]) dfs(x+w[i],y+e[i]);<br>            l[x][y]=std::min(l[x][y],l[x+w[i]][y+e[i]]);<br>            r[x][y]=std::max(r[x][y],r[x+w[i]][y+e[i]]);<br>        }<br>    }<br>}</p>
+<p>int main()<br>{<br>    memset(l,0x3f,sizeof(l));<br>    memset(r,0,sizeof(r));<br>    scanf(“%d%d”,&amp;n,&amp;m);<br>    for(register int i=n;i&gt;=1;i–)<br>        _for(j,1,m)<br>            scanf(“%d”,&amp;a[i][j]);<br>    _for(i,1,m)<br>        l[1][i]=r[1][i]=i;<br>    _for(i,1,m)<br>        if(!vis[n][i])<br>            dfs(n,i);<br>    _for(i,1,m)<br>        if(!vis[1][i]) {flag=false; cnt++;}<br>    if(!flag) {printf(“0\n%d”,cnt); return 0;}<br>    while(k&lt;=m)<br>    {<br>        maxn=0;<br>        _for(i,1,m)<br>            if(l[n][i]&lt;=k)<br>                maxn=std::max(maxn,r[n][i]);<br>        ans++;<br>        k=maxn+1;<br>    }<br>    printf(“1\n%d”,ans);<br>    return 0;<br>}</p>
+<pre><code></code></pre>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2019/07/11/P1120/">
+        Luogu P1120 →
+    </a>
+    
+</nav>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>We gonna set on.</p>
-        </div>
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
